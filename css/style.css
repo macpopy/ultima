@@ -1,0 +1,553 @@
+/*elemento{
+    propiedad: valor;
+}
+*/
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../fonts/fuente1/mi-fuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url('../fonts/fuente2/mi-fuente2.ttf') format('truetype'); /* Cambia el nombre del archivo según corresponda */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ver lo del font*/
+
+.div1 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.div1 h1 {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    text-align: center;
+    color: black;
+    margin: auto;
+    font-size: 40px;
+}
+
+.div1 .logo3 {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    top: 0px;
+}
+
+.portada {
+    background-color: rgb(129, 26, 45);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1%;
+    margin: 0px;
+}
+
+.portada h2 {
+    font-family: 'MiFuentePersonalizada', sans-serif; 
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-top: 0%;
+    margin-right: 5%;
+}
+
+.menu2 {
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+.menu2 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu2 li {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    font-family: 'MiFuentePersonalizada';    
+}
+
+.menu2 a {
+    color: rgb(129, 26, 45);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.menu2 ul li:hover a{
+    color: rgb(175, 76, 94);
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid1 p {
+    font-family: 'MiFuentePersonalizada2', sans-serif; /* Aplica la nueva fuente */
+    font-size: 25px;
+    color:rgb(129, 26, 45);
+}
+
+.grid1-item {
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid1-item:hover {
+    transform: scale(1.1); /* Aumenta la escala del elemento en un 20% cuando se hace hover */
+}
+
+.grid1-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid1-item h3 {
+    margin: 10px 0;
+    font-family: 'MiFuentePersonalizada';
+}
+.grid1 h3:hover{
+    color: rgb(175, 76, 94);
+}
+/*.grid1-item img:hover {
+    transform: scale(1.2);
+}*/
+
+.gridfooter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas flexibles que se ajustan al tamaño del contenedor */
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(129, 26, 45);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0/*margin: -30px auto -40px -10px;*/
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Altura de 300px */
+}
+
+.grid-item img {
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+    /*margin: 10%;*/
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img{
+    transform: scale(1.2);
+}
+.grid-item ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.grid-item ul li {
+    padding: 5px 0; /* Espaciado entre los elementos de la lista */
+    color: white; /* Color del texto */
+}
+
+.grid-item ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'MiFuentePersonalizada';
+}
+
+.grid-item ul li:hover a{
+    color: rgb(29, 12, 12);
+    transform: scale(1.2);
+}
+
+/* Diseño Pestañas*/
+
+.grid-cafeteria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas flexibles que se ajustan al tamaño del contenedor */
+    gap: 10px;
+    padding: 5px;
+    background-color: rgb(129, 26, 45);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0/*margin: -30px auto -40px -10px;*/
+}
+
+.grid-cafeteria .caf{
+    font-family: 'MiFuentePersonalizada';
+    color: white;
+    margin: 5%;
+    text-align: left;
+}
+
+.grid-cafeteria .volver{
+    width: 20%;
+    height: auto;
+    /*margin: 10%;*/
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.grid-cafeteria :hover .volver{
+    transform: scale(1.2);
+}
+
+.menu2cafeteria {
+    background-color: rgb(129, 26, 45);
+    padding: 0.5%;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.menu2cafeteria ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu2cafeteria li {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    font-family: 'MiFuentePersonalizada';    
+}
+
+.menu2cafeteria a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 5px;
+}
+
+.menu2cafeteria ul li:hover a{
+    color: rgb(175, 76, 94);
+}
+/*Carousel*/
+
+.carousel-item img {
+    width: 10%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+/*Grid Pestana cafeteria*/
+/* Estilo personalizado para los contenedores */
+.custom-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -110px;
+    margin-bottom: -100px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo personalizado para las columnas */
+.custom-column {
+    background-color: white;
+    padding: 100px;
+    border-radius: 5px;
+    font-family: 'MiFuentePersonalizada2';
+}
+
+.custom-colum:hover{
+    transform: scale(1.2);
+}
+
+/* Estilo personalizado para el texto dentro de las columnas */
+.custom-text {
+    color: rgb(129, 26, 45);
+    font-size: 20px; 
+    font-family: 'MiFuentePersonalizada2';
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-container h3 {
+    color: rgb(49, 9, 16); 
+    font-size: 30px;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+/* Añadir sombra suave a las imágenes */
+.custom-column img {
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-column img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container-reservas {
+    font-family: 'MiFuentePersonalizada';
+}
+.container-reservas .col {
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.container-reservas img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% del tamaño original cuando se pasa el cursor sobre ella */
+    transition: transform 0.3s ease; /* Aplica una transición suave a la escala */
+}
+
+/*ESTILO PERSONALIZADO TRABAJA CON NOSOTROS*/
+
+
+
+.tituloformulario h2 {
+    font-family: 'MiFuentePersonalizada';
+    font-size: medium;
+    text-align: center;
+    font-size: 40px;
+    padding: auto;
+    margin: 10px;
+    color: rgb(167, 80, 96);
+}
+
+/* Contenedor personalizado para el formulario */
+.custom-form-container {
+    padding: 100px;
+    margin-left: 3000px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    align-items: right;
+}
+
+.custom-form-container,
+.custom-form-container * {
+    font-family: 'MiFuentePersonalizada2'; /* Cambia 'MiFuentePersonalizada' por el nombre de tu fuente personalizada */
+}
+
+/* Estilos para etiquetas y entradas del formulario */
+.custom-form-container .form-label {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.custom-form-container .form-control, 
+.custom-form-container .form-check-input {
+    font-size: 16px;
+}
+
+/* Estilos para el botón desplegable */
+.custom-dropdown button {
+    background-color: rgb(129, 26, 45);
+    border: none;
+    color: white;
+}
+
+/* Estilos para el botón de envío */
+.custom-submit-button {
+    background-color: rgb(134, 67, 79);
+    border: none;
+}
+
+.custom-submit-button:hover {
+    background-color: rgb(129, 26, 45);
+}
+
+
+.menuvinilos {
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+.menuvinilos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menuvinilos li {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    font-family: 'MiFuentePersonalizada';    
+}
+
+.menuvinilos a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.menuvinilos ul li:hover a{
+    color: rgb(129, 26, 45);
+}
+
+.buscar {
+    font-family: 'MiFuentePersonalizada';
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    margin-left: 200px;
+    margin-top:20px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilos vinilo-container */
+.vinilos-container {
+    padding: 20px;
+    margin: 100px;
+  }
+  
+  /* Estilos para las tarjetas */
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde con sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+  }
+  
+  /* Estilos para las imágenes de las tarjetas */
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Estilos para los títulos de las tarjetas */
+  .card-title {
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #940e0e; /* Color del texto */
+    margin-bottom: 0; /* Eliminar margen inferior */
+    font-family: 'MiFuentePerzonalizada2';
+    font-weight: 400;
+  }
+  
+  /* Estilos para los textos de las tarjetas */
+  .card-text {
+    color: #070707; /* Color del texto secundario */
+    font-family: 'MiFuentePerzonalizada';
+  }
+  
+
+
+.categorias{
+    align-items: center;
+    margin-left: 600px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gridfooter {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cambia el tamaño de las columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .div1 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .portada {
+        width: 100vw; /* Ocupa todo el ancho de la ventana en dispositivos de escritorio */
+        margin-top: 0; /* Elimina el margen superior negativo en dispositivos de escritorio */
+    }
+
+    .div1 .logo3 {
+        width: 50%;
+    }
+
+    .div1 h1 {
+        text-align: center;
+    }
+
+    .menu2 ul {
+        flex-direction: column;
+    }
+
+    .menu2 li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .grid1 {
+        grid-template-columns: 1fr;
+    }
+
+    .menuvinilos ul {
+        flex-direction: column;
+    }
+
+    .menuvinilos li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .grid-cafeteria {
+        grid-template-columns: repeat(2,1fr); /* Ajusta el tamaño de las columnas en pantallas más pequeñas */
+    }
+
+    .grid-cafeteria .cafe {
+        max-width: 100%; /* Se asegura de que la imagen no exceda el ancho del contenedor */
+        height: auto;
+    }
+
+    .menu2cafeteria ul {
+        flex-direction: column; /* Cambia la dirección del menú a columna */
+        align-items: center; /* Centra los elementos de la columna */
+    }
+
+    .menu2cafeteria li {
+        margin: 10px 0; /* Ajusta el margen entre los elementos del menú */
+    }
+}

@@ -1,0 +1,81 @@
+
+
+
+@include estilomenu;
+
+/* Carousel */
+.carousel-item  {
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    
+}
+
+/* Grid Pestana cafeteria */
+
+.container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -110px;
+    margin-bottom: -100px;
+    transition: transform 0.3s ease;
+
+    .row{
+        .col-sm{
+
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: $fuente2;
+            
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                width: 100%; /* Asegura que la imagen tome todo el ancho del contenedor */
+                height: auto;
+                transition: box-shadow 0.3s ease;
+    
+                &:hover {
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                }
+            }
+            h3{
+                color: $color3; 
+                font-size: 30px;
+                font-weight: bold; 
+                text-align: center; 
+                font-family: $fuente2;
+            }
+            p{
+                color: $color1;
+                font-size: 20px; 
+                font-family: $fuente2;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.container-reservas {
+    font-family: $fuente2;
+    margin-top: 150px;
+
+        .col {
+            text-align: center; /* Alinea el texto al centro */
+            h4{
+                font-family: $fuente2;
+            }
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Escala la imagen al 110% del tamaño original cuando se pasa el cursor sobre ella */
+            transition: transform 0.3s ease; /* Aplica una transición suave a la escala */
+        }
+}

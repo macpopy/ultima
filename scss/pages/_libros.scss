@@ -1,0 +1,22 @@
+
+@include estilomenu;
+
+.cajalibros{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .tituloformulario{
+        font-family: $fuente3;
+        color: $color2;
+        align-items: center;
+    
+    }
+    
+    .categorias{
+        font-family: $fuente3;
+        align-items: center;
+    }
+    
+}
+

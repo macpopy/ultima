@@ -1,0 +1,82 @@
+
+
+@mixin estilomenu{
+    .menu2 {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    
+        .menu {
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+    
+                li {
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 0 10px;
+                    font-family: $fuente3 !important;
+                    
+    
+                    a {
+                        color: $color1;
+                        text-decoration: none;
+                        font-size: 1.1em;
+                        font-weight: bold;
+    
+                        &:hover {
+                            color: $color2;
+                        }
+                    }
+                }
+            }
+        }
+    
+        @media (max-width: $medida3) { // 768px
+            .menu ul {
+                flex-direction: column;
+                li {
+                    margin: 5px 0;
+                }
+            }
+        }
+    
+        @media (max-width: $medida2) { // 576px
+            .menu ul {
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+    
+        @media (max-width: $medida1) { // 480px
+            .menu ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@mixin medida1 {
+    @media (max-width: #{medida1}){
+        @content;
+    }
+}
+
+@mixin medida2 {
+    @media (max-width: #{$medida2}){
+        @content;
+    }
+}
+
+@mixin medida3 {
+    @media (max-width: #{medida3}){
+        @content;
+    }
+}
+

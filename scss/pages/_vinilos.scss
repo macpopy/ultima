@@ -1,0 +1,79 @@
+
+@include estilomenu;
+
+.buscar {
+    font-family: $fuente2;
+    background-color: white;
+    position: sticky;
+    top: 33px;
+    z-index: 1000;
+    margin: 20px auto;
+    padding: 0 20px;
+
+    @media (max-width:#{$medida3}){
+        display: flex;
+        align-items: center; 
+        justify-content: center;   
+        width: 100%;
+        top: 216px;
+    }
+
+    @media (max-width:#{$medida2}){
+        display: flex;
+        align-items: center; 
+        justify-content: center;   
+        width: 100%;
+        top: 199px;
+    }
+
+    @media (max-width:#{$medida1}){
+        display: flex;
+        align-items: center; 
+        justify-content: center;   
+        width: 100%;
+        top: 182px;
+    }
+
+   
+
+}
+
+/* Estilos vinilo-container */
+.vinilos-container {
+    padding: 20px;
+    margin: 100px;
+
+    @media (max-width:#{$medida3}){
+        margin: 50px 10px;
+
+    }
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde con sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+
+    &:hover {
+        transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    }
+
+    .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Tamaño de fuente más grande */
+        color: $color1; /* Color del texto */
+        margin-bottom: 0; /* Eliminar margen inferior */
+        font-family: $fuente2;
+        font-weight: 400;
+    }
+
+    .card-text {
+        color: $color3; /* Color del texto secundario */
+        font-family: $fuente2;
+    }
+}
